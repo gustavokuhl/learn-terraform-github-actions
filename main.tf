@@ -24,6 +24,16 @@ provider "aws" {
   region = "us-west-2"
 }
 
+variable "AWS_ACCESS_KEY_ID" {
+  type        = string
+  default     = ""
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  type        = string
+  default     = ""
+}
+
 resource "random_pet" "sg" {}
 
 data "aws_ami" "ubuntu" {
