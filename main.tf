@@ -25,13 +25,13 @@ provider "aws" {
 }
 
 variable "AWS_ACCESS_KEY_ID" {
-  type        = string
-  default     = ""
+  type    = string
+  default = ""
 }
 
 variable "AWS_SECRET_ACCESS_KEY" {
-  type        = string
-  default     = ""
+  type    = string
+  default = ""
 }
 
 resource "random_pet" "sg" {}
